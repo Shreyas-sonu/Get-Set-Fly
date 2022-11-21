@@ -1,0 +1,56 @@
+#navbarBlock {
+  background-color: #fff;
+  height: 70px;
+  width: 100%;
+  box-shadow: 1px 0px 3px 0px rgba(173, 216, 230, 0.612);
+}
+#navbarBlock>article{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+}
+#navbarBlock>article>.logoBlock a{
+    color: #673987;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: math-auto;
+    letter-spacing: 1.4px;
+    text-decoration: none;
+    position: relative;
+}
+.icon{
+    color: deeppink;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 30px;
+    font-weight: 900;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+.menuBlock ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+.menuBlock ul a{
+    padding:  10px 20px;
+    border:  1px solid #673987;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    border-radius: 5px;
+    transition: 0.2s all ease-in-out;
+}
+.menuBlock ul a:hover{
+    background-color: #673987;
+    color: #fff;
+    border: 1px solid #673987;
+    transition: 0.2s all ease-in-out;
+}

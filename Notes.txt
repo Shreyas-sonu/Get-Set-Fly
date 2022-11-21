@@ -1,0 +1,20 @@
+Fire Base as Bass(Backend as Service)(Provided by google)
+
+it provides
+1. Storing files (Fire Store (Data base) such as audio video etc)
+2. Authentication
+3. Authorization
+4. Backend Service
+
+
+what is firebase
+
+Firebase provides detailed documentation and cross-platform SDKs to help you build and ship apps on Android, iOS, the web, C++, and Unity (Gaming) . View all docs.
+Firebase is great for quick projects: it's easy to set up, fast, in many cases requires only front-end logic. It lets you focus on your app instead of implementing custom authentication, web sockets or database connections.
+
+
+Module Css
+it is a scope level CSS (Alt for angular js scope level css)
+it is the way of creating a seperate module for each components for styling to avoid conflict with global.css (name.module.css) .module is must while creating a module css.
+notes
+ CSS Modules are "CSS files in which all class names and animation names are scoped locally by default". Instead of having CSS files and classes that are static, CSS Modules creates a dynamic implementation that is locally scoped to the HTML with the help of Webpack or Browserify.

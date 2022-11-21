@@ -1,0 +1,5 @@
+axios
+react-router-dom@latest
+firebase@latest
+react-moment
+dotenv
