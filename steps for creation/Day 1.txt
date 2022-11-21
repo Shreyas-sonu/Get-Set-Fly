@@ -1,0 +1,41 @@
+Day 1 Creating Nav Bar and Authentication (Register part- for new user creation)
+
+step-1
+create a folder structure as follows
+src=>index.js , App.jsx ,global.css ,folders{apis,components,pages}
+
+step 2
+create components and compose as follows
+app{browser router{navbar(rotes(home,login,register))}}
+step2 - description 
+nav bar is constant
+in navbar there are 2 dynamic links available
+we have used NavLink instead of Link here which provides the extra feature activeclassname
+Register - Link contain register form for new user
+Login  - Form Contains Login form for authenticated users
+Home- by default the page will be in home page
+
+REGISTER
+
+we have a form which takes the input from the new users and all the information will be stored.
+there are 2 events in Register
+1 handle change
+2 handle submit
+
+1 handle change
+
+when ever there will be a change in any input fields all the values will be set at the name as key in an state
+
+2 handle submit
+
+there is two fields with same input that is password and confirm password
+in handle submit it should have try catch
+in try there should condition
+cond-1 when password and confirm password are same
+the object is consoled and and a react-toastify success msg is displayed
+
+cond-2 when they are different toastify error msg should be thrown
+
+after try catch in the end after submitted all the state values are made "" empty to make the field register
+
+
