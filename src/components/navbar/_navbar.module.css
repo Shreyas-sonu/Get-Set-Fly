@@ -37,6 +37,26 @@
     list-style: none;
     gap: 10px;
 }
+.menuBlock ul button{
+    padding:  5px 10px;
+    border:  1px solid crimson;
+    background: none;
+    color: crimson;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    border-radius: 100%;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+}
+.menuBlock ul button:hover{
+    background-color: crimson;
+    border: 1px solid crimson;
+    color: #fff;
+    box-shadow: 0px 0px 8px 3px lightgrey
+}
 .menuBlock ul a{
     padding:  10px 20px;
     border:  1px solid #673987;
@@ -53,4 +73,20 @@
     color: #fff;
     border: 1px solid #673987;
     transition: 0.2s all ease-in-out;
+}
+.userAvatar{
+    width: auto !important;
+    padding: 0 !important;
+    border: none !important;
+    font-size:smaller;
+    display:flex;
+    align-items:center;
+    padding: 0 2px;
+}
+.userAvatar img{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 100%;
+    margin: 4px 10px;
 }

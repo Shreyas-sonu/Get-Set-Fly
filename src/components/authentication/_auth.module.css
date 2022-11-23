@@ -23,8 +23,9 @@
 }
 .authRight h1{
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     color: #fff;
+    font-size: xx-large;
 }
 .authLeft{
     flex-basis: 60%;
@@ -80,4 +81,116 @@
     border: 1px solid #673987;
     font-weight: bold;
     font-size: 16px;
+}
+#authLoginBlock>article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+#authLoginBlock>article form{
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px #eee;
+}
+#authLoginBlock>article h1{
+    color: #673987;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: xx-large;
+    padding: 15px 0;
+    text-align: center;
+}
+#authLoginBlock>article div{
+    position: relative;
+}
+#authLoginBlock>article label{
+    color: #673987;
+    width: 100%;
+    padding: 5px 0;
+    display: inline-block;
+    font-weight: 600;
+}
+#authLoginBlock>article input{
+    border: 1px solid #ccc;
+    width: 100%;
+    background: transparent;
+    padding: 14px 10px 14px 30px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+#authLoginBlock>article button{
+    width: 100%;
+    background-color: #673987;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid #673987;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.2s all ease-in-out;
+}
+#authLoginBlock>article button:hover{
+    background-color: #fff;
+    color: #673987;
+    border: 1px solid #673987;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+/* #authLoginBlock>article .user{
+    position: absolute;
+    right: 0;
+    top: -10%;
+} */
+#authLoginBlock>article>div .showPassword{
+   position: absolute;
+    right: 10px;
+    top: 60%;
+    transition: 0.3s all ease-in-out;
+    color: gray;
+}
+#authLoginBlock>article>div svg{
+    font-size: large;
+}
+#authLoginBlock>article>div .showPassword:hover{
+    color: #673987;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+}
+#authLoginBlock>article>div span a{
+    color:rgb(62, 124, 64);
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+#authLoginBlock>article>div span a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bolder;
+    color: #673987;
+    text-decoration-color:#673987;
+}
+.reset{
+    color: orchid;
+    text-decoration: none;
+    display: block;
+    margin: 0px 0px 20px;
+    text-align: right;
+}
+.reset:hover{
+    color: orangered;
+}
+.user{
+    position: absolute;
+    left: 5px;
+    top: 56%;
+}
+.pass{
+    position: absolute;
+    left: 5px;
+    top: 56%;
 }

@@ -6,10 +6,11 @@ import { toast } from 'react-toastify';
 // import fireBaseApp from '../../apis/firebase'; //way2
 import { auth } from './../../apis/firebase';
 import { useNavigate } from "react-router-dom";
+import md5 from "md5";
 
 
 //built in firebase function for authentication
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword,sendEmailVerification,updateProfile } from '@firebase/auth';
 //internally they are jwt web token
 const Register = () => {
     let navigate = useNavigate();
@@ -20,7 +21,7 @@ const Register = () => {
         confirmPassword: "",
         isLoading:false,
     })
-    let { username, email, password,confirmPassword, isLoading } = state;
+  let { username, email, password, confirmPassword, isLoading } = state;
     let handleChange = e => {
         let { name, value } = e.target;
         setState({ ...state, [name]: value })
@@ -33,12 +34,23 @@ const Register = () => {
             }
             else {
                 setState({ isLoading: true })
-                await createUserWithEmailAndPassword(auth, email, password)
-                toast.success(`Registered Successfully Welcome ${username}`)
+                let userData = await createUserWithEmailAndPassword(
+                      auth,
+                      email,
+                      password,
+              );
+              sendEmailVerification(userData.user);
+              let msg = `Email Verification has been send to Email Adress Please Verify Your Email...`
+              updateProfile(userData.user, {
+                displayName: username,
+                photoURL:`https://www.gravatar.com/avatar/${md5(email)}?q=identicon`
+              })
+              toast.success(`${msg}}`)
+              console.log(userData.user)
                 navigate("/login")
             }
         } catch (error) {
-            console.log(error)
+            toast.error(error.code)
         }
         //Resetting Fields after submit
         setState({

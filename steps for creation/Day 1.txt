@@ -36,6 +36,15 @@ the object is consoled and and a react-toastify success msg is displayed
 
 cond-2 when they are different toastify error msg should be thrown
 
-after try catch in the end after submitted all the state values are made "" empty to make the field register
+after try catch in the end after submitted all the state values are made "" empty to make the field reset to initial state
+
+for cond-1 we require react-toastify 
+the ToastifyContainer should be Composed in the App Component before routes in-order to access the react-toastify messages
+
+the following should b imported
+import "react-toastify";
+import { ToastContainer } from 'react-toastify';
+importantly the below styles should be imported
+import "react-toastify/dist/ReactToastify.css";
 
 

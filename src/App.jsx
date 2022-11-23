@@ -8,19 +8,43 @@ import NotFound from './pages/NotFound';
 import "react-toastify";
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import AuthContextProvider from './apis/AuthContextApi';
+import ProtectedRouter from './apis/ProtectedRouter';
+import PublicRouter from './apis/PublicRoute';
 
 const App = () => {
   return (
-    <Router>
-      <Navbar />
-      <ToastContainer theme='dark'/>
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/login' element={<Login/>} />
-        <Route path='/register' element={<Register/>} />
-        <Route path='*' element={<NotFound/>} />
-      </Routes>
-    </Router>
+    <AuthContextProvider>
+      <Router>
+        <Navbar />
+        <ToastContainer theme="dark" />
+        <Routes>
+          <Route
+            path="/"
+            element={
+                <Home />
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <PublicRouter>
+                <Login />
+              </PublicRouter>
+            }
+          />
+          <Route
+            path="/register"
+            element={
+              <PublicRouter>
+                <Register />
+              </PublicRouter>
+            }
+          />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
+    </AuthContextProvider>
   );
 }
 
