@@ -1,0 +1,81 @@
+.deals{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -2%;
+}
+.deals form{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    padding: 5px;
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: #c9bfbf; */
+    gap: 1px;
+    align-items: center;
+    /* box-shadow: 0px 0px 3px 2px #c9bfbfcd */
+}
+.deals form span{
+    flex-basis: 28%;
+    position: relative;
+}
+.deals form span:first-child{
+    flex-basis: 40%;
+}
+.deals form span:nth-child(2){
+    flex-basis: 20%;
+    display: flex;
+    gap: 0px;
+}
+.deals form input{
+    width: 100%;
+    height: 90%;
+    border: 1px solid #673987;
+    border-radius: 5px;
+    padding: 15px 0 15px 25px;
+}
+.deals form input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #673987;
+}
+.deals form select:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #673987;
+}
+.deals form select{
+    width: 100%;
+    height: 90%;
+    border: 1px solid #673987;
+    border-radius: 5px;
+    padding: 15px 0 15px 25px;
+}
+.deals form span:nth-child(2) input:first-child{
+    padding-left:10px;
+    padding-right: 0px;
+    border-right: none;
+}
+.deals form span:nth-child(2) input:first-child::placeholder{
+    text-align: right;
+}
+.deals form span:nth-child(2) input:last-child{
+    padding-left:0px;
+    padding-right: 10px;
+    border-left: none;
+}
+.deals form button{
+    padding: 15px 25px;
+    background-color: #673987;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #673987;
+    font-weight: 700;
+    cursor: pointer;
+}
+.deals form button:hover{
+    color: #673987;
+    background-color: #fff;
+    border: 1px solid #673987;
+}

@@ -1,5 +1,5 @@
 import React, { Fragment, useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import Style from "./_navbar.module.css";
 import { AuthContextApi } from "../../apis/AuthContextApi";
 import {FaPowerOff} from "react-icons/fa"
@@ -10,13 +10,17 @@ const Menu = () => {
     return (
       <Fragment>
         <li className={Style.userAvatar}>
-          <img src={authuser.photoURL} alt={authuser.displayName} />
+          <Link to="/profile" className={Style.profile}>
+            <img src={authuser.photoURL} alt={authuser.displayName} />
+          </Link>
           {/* <span>
             Welcome <b style={{ color: "#673987",fontWeight:"bolder" }}>{authuser.displayName}</b>
           </span> */}
         </li>
         <li>
-          <button onClick={logOut} title="Logout from Account"><FaPowerOff/></button>
+          <button onClick={logOut} title="Logout from Account">
+            <FaPowerOff />
+          </button>
         </li>
       </Fragment>
     );

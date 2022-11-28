@@ -68,6 +68,13 @@
     border-radius: 5px;
     transition: 0.2s all ease-in-out;
 }
+.profile{
+    padding: 0 !important;
+    height: auto !important;
+    width: auto !important;
+    border: none !important;
+    border-radius: 100% !important;
+}
 .menuBlock ul a:hover{
     background-color: #673987;
     color: #fff;
@@ -84,8 +91,9 @@
     padding: 0 2px;
 }
 .userAvatar img{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
     display: inline-block;
     border-radius: 100%;
     margin: 4px 10px;

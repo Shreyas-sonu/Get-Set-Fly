@@ -20,7 +20,8 @@ const AuthContextProvider = ({ children }) => {
                 setLoading(true)
                 setAuthuser(userInfo)
                 let token = userInfo.accessToken;
-                window.sessionStorage.setItem("token", token)
+              window.sessionStorage.setItem("token", token)
+              console.log(userInfo)
             }
             else {
                 setAuthuser(null)

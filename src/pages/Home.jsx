@@ -1,13 +1,18 @@
 import React from 'react';
-import Style from "./_pages.module.css";
+import Slider from '../slider/Slider';
+import Style from "../hotelsAndCity/_pages.module.css";
+import BookingDeals from './../hotelsAndCity/BookingDeals';
 
 
 const Home = () => {
   return (
     <section id={Style.pageBlock}>
-      Home
+      <article>
+        <Slider />
+        <BookingDeals/>
+      </article>
     </section>
-  )
+  );
 }
 
 export default Home

@@ -16,12 +16,13 @@ const Register = () => {
     let navigate = useNavigate();
     let [state, setState] = useState({
         username: "",
-        email: "",
+      email: "",
+        phone:"",
         password: "",
         confirmPassword: "",
         isLoading:false,
     })
-  let { username, email, password, confirmPassword, isLoading } = state;
+  let { username, email,phone, password, confirmPassword, isLoading } = state;
     let handleChange = e => {
         let { name, value } = e.target;
         setState({ ...state, [name]: value })
@@ -35,19 +36,20 @@ const Register = () => {
             else {
                 setState({ isLoading: true })
                 let userData = await createUserWithEmailAndPassword(
-                      auth,
-                      email,
-                      password,
+                    auth,
+                    email,
+                    password,
               );
               sendEmailVerification(userData.user);
               let msg = `Email Verification has been send to Email Adress Please Verify Your Email...`
               updateProfile(userData.user, {
                 displayName: username,
+                phoneNumber:phone,
                 photoURL:`https://www.gravatar.com/avatar/${md5(email)}?q=identicon`
               })
               toast.success(`${msg}}`)
-              console.log(userData.user)
-                navigate("/login")
+              console.log(userData)
+                // navigate("/login")
             }
         } catch (error) {
             toast.error(error.code)
@@ -56,6 +58,7 @@ const Register = () => {
         setState({
             username: "",
             email: "",
+            phone:"",
             password: "",
             confirmPassword: "",
             isLoading:false,
@@ -118,8 +121,22 @@ const Register = () => {
                 required
               />
             </div>
+            <div className="form-group">
+              <label htmlFor="">Phone</label>
+              <input
+                type="phone"
+                id="phone"
+                name="phone"
+                placeholder="+91XXXXXXXXXX"
+                maxLength={13}
+                value={phone}
+                title="Please Enter in the Same Format '+91 1234567890'"
+                onChange={handleChange}
+                required
+              />
+            </div>
             <div>
-                <button>{isLoading?"Loading...":"Register"}</button>
+              <button>{isLoading ? "Loading..." : "Register"}</button>
             </div>
           </form>
         </div>

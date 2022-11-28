@@ -1,0 +1,152 @@
+#adminBlock > article {
+  width: 100%;
+  display: flex;
+  height: 88.5vh;
+}
+.adminSideBar {
+  flex-basis: 20%;
+  background-color: #fff;
+}
+.adminMain {
+  flex-basis: 80%;
+  background-color: #eee;
+}
+.adminSideBar nav a {
+  display: flex;
+  justify-content: start;
+  text-decoration: none;
+  gap: 10px;
+  align-items: center;
+  height: 30px;
+  color: #3f51b5;
+  padding: 20px 10px 10px 20px;
+}
+
+.adminMain aside {
+  display: flex;
+}
+.card {
+  flex-basis: 24%;
+  background-color: #fff;
+  padding: 15px;
+  min-height: 150px;
+  box-shadow: 1px 1px 3px 1px #efefef;
+  margin: 10px;
+}
+.card a {
+  padding: 8px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #eee;
+  border: 1px solid rgb(39, 222, 161);
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  font-size: small;
+  background-color: rgb(39, 222, 161);
+  font-weight: bolder;
+}
+.card a:hover {
+  background-color: #3f51b5;
+  border: 1px solid #555;
+}
+.adminSideBar nav a span:first-child {
+  font-size: large;
+  font-weight: 700;
+  color: deeppink;
+  font-size: x-large;
+  padding-left: 20px;
+}
+.card h1 {
+  color: #3f51b5;
+  font-size: x-large;
+  padding-bottom: 10px;
+}
+.card p {
+  margin: 10px auto;
+}
+.card p b {
+  display: inline-block;
+  border-radius: 20px;
+  float: right;
+  background-color: green;
+  height: 23px;
+  width: 23px;
+  color: white;
+  text-align: center;
+}
+.card p time {
+  letter-spacing: 1.5px;
+  font-size: smaller;
+  color: #444;
+}
+
+.cardBody {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+.cardBody div {
+  flex-basis: 24%;
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 1px 1px 3px 1px #efefef;
+}
+.cardBody img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.cardBody a{
+padding: 8px;
+width: 100%;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #eee;
+  border: 1px solid rgb(39, 222, 161);
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  font-size: small;
+  background-color: rgb(39, 222, 161);
+  font-weight: bolder;
+  text-align: center;
+}
+.adminUserHeading{
+    color: #3f51b5;
+    font-weight: 900;
+    font-size: x-large;
+    text-align: center;
+    width: 100%;
+    margin: 10px auto;
+}
+.userInfo{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(148, 176, 177);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+.userInfo figure{
+    flex-basis: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.userInfo figure img{
+    width: 100%;
+    border-radius: 50px;
+}
+.userInfo main{
+    flex-basis: 58%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}

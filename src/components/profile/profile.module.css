@@ -1,0 +1,208 @@
+#profileBlock > article {
+  display: flex;
+  height: 88vh;
+}
+.profileSidebar {
+  flex-basis: 20%;
+  background-color: #eee;
+}
+.profileMainblock {
+  flex-basis: 80%;
+  background-color: #fff;
+}
+.profileMainblock aside {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profileMainblock > h1 {
+  text-align: left;
+  padding: 10px;
+  color: #673987;
+  text-shadow: 1px 0px 0px #111;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #efefefc3;
+  box-shadow: 2px solid #efefef;
+}
+.profileMainblock img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.profileMainblock aside h1 {
+}
+.profileSidebar nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  height: 5vh;
+}
+.profileSidebar ul li a {
+  width: 100%;
+  background-color: #fff;
+  color: #673987;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-bottom: 1px solid #ccc;
+  transition: ease all 0.7s;
+  height: inherit;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+}
+.profileSidebar ul a:hover {
+  background-color: #673987;
+  color: #fff;
+}
+.profileMainblock aside figure {
+  position: relative;
+}
+.profileMainblock aside figure span {
+  position: absolute;
+  bottom: 8%;
+  right: 7%;
+  padding: 5px;
+  border-radius: 100%;
+  border: 1px solid rgba(85, 85, 85, 0.473);
+  background-color: #fff;
+  cursor: pointer;
+}
+.profileMainblock aside figure span svg {
+  color: #673987;
+  font-size: larger;
+  font-weight: bold;
+}
+.profileMainblock article > h1 {
+  text-align: center;
+  font-size: 23px;
+  text-transform: capitalize;
+  padding: 14px;
+}
+.profileMainblock article > main {
+  color: #555;
+  font-weight: lighter;
+  font-size: medium;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
+.profileMainblock article form {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40vh;
+}
+.profileMainblock article form label {
+  display: block;
+  font-weight: bold;
+  color: #444;
+  font-size: large;
+  margin-bottom: 2%;
+}
+.profileMainblock article form input {
+  padding: 15px;
+  border: 1px solid rgba(85, 85, 85, 0.698);
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.profileMainblock article form button {
+  border: 5px;
+  border-radius: 5px;
+  background-color: #673987;
+  color: #fff;
+  border: 1px solid #673987;
+  padding: 10px 40px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: -25px;
+}
+.profileMainblock article form button:hover {
+  color: #673987;
+  background-color: #fff;
+  border: 1px solid #673987;
+  font-weight: bold;
+  font-size: 16px;
+}
+.progress {
+  background-color: rgb(146, 195, 72);
+  color: white;
+  font-weight: bold;
+}
+.ProfileMainBlock h1 {
+  text-align: left;
+  padding: 10px;
+  color: #673987;
+  text-shadow: 1px 0px 0px #111;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #efefefc3;
+  box-shadow: 2px solid #efefef;
+}
+.ProfileMainBlock {
+  padding: 10px 0 0 10px;
+}
+.ProfileMainBlock form {
+  width: 100%;
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+.ProfileMainBlock form div {
+  flex-basis: 23%;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center;
+    justify-content: center; */
+  padding: 10px;
+}
+.ProfileMainBlock form div:nth-child(5) {
+  flex-basis: 90%;
+}
+.ProfileMainBlock form div input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgba(70, 68, 68, 0.708);
+  border-radius: 5px;
+}
+.ProfileMainBlock form div:nth-child(3) {
+  display: block !important;
+}
+.ProfileMainBlock form div:nth-child(3) input {
+  padding: 0px;
+  height: 10px;
+  width: 20px;
+}
+.ProfileMainBlock form div button {
+  border: 5px;
+  border-radius: 5px;
+  background-color: #673987;
+  color: #fff;
+  border: 1px solid #673987;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: -25px;
+  width: 50%;
+  display: inline-block;
+  margin-left: 5px;
+}
+.ProfileMainBlock form div button:hover {
+  color: #673987;
+  background-color: #fff;
+  border: 1px solid #673987;
+  font-weight: bold;
+  font-size: 16px;
+}

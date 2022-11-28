@@ -10,8 +10,68 @@ body{
     font-family: 'Lato', sans-serif;
 }
 .active{
-    background-color: #673987;
+    background-color: #673987 !important;
     color: #fff !important;
     border: 1px solid #673987;
     transition: 0.2s all ease-in-out;
+}
+#spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#spinner svg{
+    width: 100px;
+    overflow: visible;
+}
+#spinner svg circle{
+    stroke: #673987;
+    transform-origin: 50px 50px;
+    animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.slider-wrapper{
+    height: 500px !important;
+    object-fit: cover;
+}
+.slider-wrapper img{
+    height: 500px !important;
+    object-fit: cover !important;
+}
+.carousel .slide .legend{
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    top: 15% !important;
+    left: 5% !important;
+    margin-left: 0 !important;
+    width: 40% !important;
+    border-radius: 10px;
+    background-color: rgba(23, 22, 22, 0.541);
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.25;
+    transition: opacity 0.35s ease-in-out;
+    height: 280px !important;
+    bottom: 0 !important;
+
+}
+.legend h1{
+    font-size: 2rem;
+    padding: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.legend p{
+    font-size: 1.0rem;
+    padding: 10px;
+    color: #fff;
+    text-transform: lowercase;
 }

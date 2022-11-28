@@ -10,6 +10,7 @@ import { useNavigate } from "react-router-dom";
 
 //built in firebase function for authentication
 import { signInWithEmailAndPassword } from 'firebase/auth';
+import { textAlign } from '@mui/system';
 
 
 const Login = () => {
@@ -95,6 +96,23 @@ const Login = () => {
             <div>
               <button>{isLoading ? "Loading..." : "Login"}</button>
             </div>
+            <p style={{ textAlign: "center" }}>
+              <small>or</small>
+            </p>
+            <hr />
+            <Link
+              to="/phone-auth"
+              style={{
+                display: "block",
+                textDecoration: "none",
+                color: "#673987",
+                marginTop: "15px",
+                textShadow: "1px 1px 1px 1px #555",
+                cursor: "pointer",
+              }}
+            >
+              Login With Phone Number
+            </Link>
           </form>
         </div>
       </article>
