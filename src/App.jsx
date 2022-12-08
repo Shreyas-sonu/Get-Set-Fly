@@ -18,12 +18,12 @@ import ResetPassword from './components/authentication/ResetPassword';
 import PhoneAuth from './components/authentication/PhoneAuth';
 import UpdateProfileData from './components/profile/UpdateProfileData';
 import Admin from './admin/Admin';
-import AddHotel from './admin/AddHotel';
 import AdminRoute from './apis/AdminRoute';
 import ListOfUsers from './admin/ListOfUsers';
 import Users from './admin/Users';
 import AdminPanelContainer from './admin/AdminPanelContainer';
 import UserDetails from './admin/UserDetails';
+import AddHotels from './admin/AddHotels';
 
 const App = () => {
   return (
@@ -42,10 +42,10 @@ const App = () => {
             }
           >
             <Route
-              path="add-hotel"
+              path="add-hotels"
               element={
                 <AdminRoute>
-                  <AddHotel />
+                  <AddHotels/>
                 </AdminRoute>
               }
             />

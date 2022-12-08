@@ -19,8 +19,11 @@ const Users = () => {
         let payload = userData.docs.map(val => {
           return { ...val.data(), id: val.id };
         });
+        let filteredUser = payload.filter(user => user.role !== 'admin');
         console.log(payload);
-        setUsers(payload);
+        console.log(filteredUser)//for filtered users (Admin excluded)
+        // setUsers(payload);
+        setUsers(filteredUser);
       };
       fetchUser();
     } catch (error) {

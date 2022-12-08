@@ -16,12 +16,19 @@
   justify-content: start;
   text-decoration: none;
   gap: 10px;
+  width: 100%;
+  border-bottom:3px solid #efefef;
   align-items: center;
   height: 30px;
   color: #3f51b5;
   padding: 20px 10px 10px 20px;
+  margin: 10px 0;
 }
-
+.adminSideBar nav a:hover{
+  background-color: #673987;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
 .adminMain aside {
   display: flex;
 }
@@ -149,4 +156,128 @@ width: 100%;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
+}
+#addHotelsBlock{
+    background-color: #efefef;
+    width: 100%;
+}
+#addHotelsBlock>article{
+    width: 90%;
+    height: 80vh;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+}
+#addHotelsBlock .authRight{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    padding-top: 30px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #673987;
+    border-right: 1px solid rgba(167, 168, 169, 0.748);
+}
+ #addHotelsBlock .authRight h1{
+    text-align: center;
+    margin-bottom: 5%;
+    color: #fff;
+    font-size: xx-large;
+}
+#addHotelsBlock .authRight img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.authLeft{
+    flex-basis: 60%;
+    background-color: #fff;
+    padding: 20px;
+}
+.authLeft form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin:  20px 0;
+}
+.authLeft form div{
+    flex-basis: 49%;
+    gap: 20px;
+}
+.authLeft form div:last-child{
+    flex-basis: 100% !important;
+    text-align: center;
+}
+.authLeft label{
+    color: #673987;
+    display: block;
+    font-weight: lighter;
+    padding: 5px 0;
+    font-size: 16px;
+}
+.authLeft input{
+    display: block;
+    font-weight: bold;
+    width: 90%;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 12px;
+    border:  1px solid rgba(204, 204, 204, 0.745);
+    margin: 5px 0;
+}
+.authLeft select{
+    display: block;
+    font-weight: bold;
+    width: 90%;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 12px;
+    border:  1px solid rgba(204, 204, 204, 0.745);
+    margin: 5px 0;
+}
+.authLeft textarea{
+   display: block;
+    font-weight: bold;
+    width: 90%;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 12px;
+    border:  1px solid rgba(204, 204, 204, 0.745);
+    margin: 5px 0;
+}
+.radioAvl input{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+.authLeft button{
+    border: 5px;
+    border-radius: 5px;
+    background-color: #673987;
+    color: #fff;
+    border: 1px solid #673987;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: -25px;
+}
+.authLeft button:hover{
+    color: #673987;
+    background-color: #fff;
+    border: 1px solid #673987;
+    font-weight: bold;
+    font-size: 16px;
+}
+.chkType input{
+  margin: 0;
+  padding: 0;
+  height: 10px;
+  width: 10px;
+  display: inline;
 }

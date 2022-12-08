@@ -22,7 +22,7 @@ const ProfileDefault = () => {
   }, []);
   return (
     <>
-      {authuser === null ? (
+      {profile === "" ? (
         <Spinner />
       ) : (
         <Fragment>

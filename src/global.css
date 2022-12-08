@@ -61,7 +61,6 @@ body{
     transition: opacity 0.35s ease-in-out;
     height: 280px !important;
     bottom: 0 !important;
-
 }
 .legend h1{
     font-size: 2rem;
