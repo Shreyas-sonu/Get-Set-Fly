@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+A travel Booking Application Interface build using React and custom Css. FireBase is used as Backend service User authentication and Authorization.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here is a snap of UI.
 
-## Available Scripts
+for Public
 
-In the project directory, you can run:
+Landing
 
-### `npm start`
+![publicHume](https://github.com/Shreyas-sonu/Get-Set-Fly/assets/111351684/4d470149-0a07-4ac6-9f87-cc32a1a00dc4)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Registration
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![reg](https://github.com/Shreyas-sonu/Get-Set-Fly/assets/111351684/101b912c-21e1-42ac-bbba-73f0cfb857ef)
+Login
 
-### `npm test`
+![Login](https://github.com/Shreyas-sonu/Get-Set-Fly/assets/111351684/888363dc-c387-405a-a71d-87e179cee13c)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+User Landing page
 
-### `npm run build`
+![userLanding](https://github.com/Shreyas-sonu/Get-Set-Fly/assets/111351684/0298a4c8-9e13-48ca-88a0-1824a83e964a)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+profile
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![userInfo](https://github.com/Shreyas-sonu/Get-Set-Fly/assets/111351684/198c17fe-a575-4c3e-9835-ab8035a90ba6)
